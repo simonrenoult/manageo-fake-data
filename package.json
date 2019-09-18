@@ -39,6 +39,7 @@
     "require-directory": "2.1.1",
     "response-time": "2.3.2",
     "serve-favicon": "2.5.0",
+    "shortid": "2.2.15",
     "swagger-ui-express": "4.0.7"
   },
   "devDependencies": {

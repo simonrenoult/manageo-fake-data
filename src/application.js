@@ -7,6 +7,7 @@ const helmet = require("helmet");
 const path = require("path");
 const responseTime = require("response-time");
 const serveFavicon = require("serve-favicon");
+const shortid = require("shortid");
 const swaggerUi = require("swagger-ui-express");
 
 const middlewares = require("./shared/middlewares");
@@ -53,6 +54,7 @@ function createConsultants(number = 100) {
 
 function createConsultant() {
   return {
+    id: shortid.generate(),
     first_name: faker.name.firstName(),
     last_name: faker.name.lastName(),
     level: randomLevel(),
