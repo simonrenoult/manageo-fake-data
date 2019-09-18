@@ -58,7 +58,7 @@ function createConsultant() {
     first_name: faker.name.firstName(),
     last_name: faker.name.lastName(),
     level: randomLevel(),
-    salaire: randomSalaire()
+    salary: randomSalaire()
   };
 }
 
